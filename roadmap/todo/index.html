@@ -435,15 +435,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#implement-user-authentication-service" class="md-nav__link">
-    <span class="md-ellipsis">
-      Implement User Authentication Service
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#develop-license-management-ui" class="md-nav__link">
     <span class="md-ellipsis">
       Develop License Management UI
@@ -462,9 +453,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#develop-web-application-frontend" class="md-nav__link">
+  <a href="#develop-web-application-frontend-for-recipe-management" class="md-nav__link">
     <span class="md-ellipsis">
-      Develop Web Application Frontend
+      Develop Web Application Frontend for Recipe Management
     </span>
   </a>
   
@@ -480,36 +471,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#set-up-cicd-pipeline" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set Up CI/CD Pipeline
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#implement-monitoring-and-logging" class="md-nav__link">
     <span class="md-ellipsis">
       Implement Monitoring and Logging
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-api-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create API Documentation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#write-user-guides" class="md-nav__link">
-    <span class="md-ellipsis">
-      Write User Guides
     </span>
   </a>
   
@@ -695,62 +659,45 @@
 
 
 <h1 id="to-do">To Do</h1>
-<p>This page lists all planned tasks that have not yet been started. When work begins on a task, it should be moved to the <a href="../in-progress/">In Progress</a> page.</p>
+<p>This page lists all planned tasks that have not yet been started. 
+When work begins on a task, it should be moved to the <a href="../in-progress/">In Progress</a> page.</p>
 <h2 id="api-services">API Services</h2>
-<h3 id="implement-user-authentication-service">Implement User Authentication Service</h3>
-<p><strong>Priority</strong>: High
-<strong>Estimated Time</strong>: 3 weeks
-<strong>Assigned To</strong>: TBD
-<strong>Dependencies</strong>: None</p>
-<p>Create a comprehensive authentication service that handles user registration, login, password reset, and token management. The service should integrate with Keycloak and support role-based access control.</p>
 <h3 id="develop-license-management-ui">Develop License Management UI</h3>
 <p><strong>Priority</strong>: High
-<strong>Estimated Time</strong>: 4 weeks
-<strong>Assigned To</strong>: TBD
+<strong>Estimated Time</strong>: 2 weeks
+<strong>Assigned To</strong>: API Team
 <strong>Dependencies</strong>: Initial API License</p>
-<p>Develop a user interface for managing licenses. The UI should allow administrators to create, view, update, and delete licenses. It should also provide features for searching and filtering licenses.</p>
+<p>Develop a user interface for managing licenses. The UI should allow administrators to buy, affect, view, update, and delete licenses. 
+It should also provide features for searching and filtering licenses and manage paiements.</p>
 <h3 id="develop-credential-management-ui">Develop Credential Management UI</h3>
-<p><strong>Priority</strong>: Medium
-<strong>Estimated Time</strong>: 3 weeks
-<strong>Assigned To</strong>: TBD
+<p><strong>Priority</strong>: High
+<strong>Estimated Time</strong>: 1 weeks
+<strong>Assigned To</strong>: API Team
 <strong>Dependencies</strong>: Initial API Credential, License Management UI</p>
-<p>Develop a user interface for managing credentials from the License UI. The UI should allow users to securely store and retrieve their credentials. It should integrate seamlessly with the License Management UI.</p>
-<h3 id="develop-web-application-frontend">Develop Web Application Frontend</h3>
+<p>Develop a user interface for managing credentials from the License UI. The UI should allow users to securely store and 
+retrieve their credentials. It should integrate seamlessly with the License Management UI. A license need a credential to store data.</p>
+<h3 id="develop-web-application-frontend-for-recipe-management">Develop Web Application Frontend for Recipe Management</h3>
 <p><strong>Priority</strong>: Medium
-<strong>Estimated Time</strong>: 6 weeks
-<strong>Assigned To</strong>: TBD
+<strong>Estimated Time</strong>: 2 weeks
+<strong>Assigned To</strong>: API Team
 <strong>Dependencies</strong>: User Interface Mockups, User Authentication Service</p>
-<p>Build the web application frontend using React, with responsive design for desktop and mobile devices. The application should include user authentication, recipe browsing, and recipe management features.</p>
+<p>Build the web application frontend using React, with responsive design for desktop and mobile devices. The application 
+should include user authentication, recipe browsing, and recipe management features.</p>
 <h3 id="implement-complete-cicd-pipeline">Implement Complete CI/CD Pipeline</h3>
 <p><strong>Priority</strong>: High
 <strong>Estimated Time</strong>: 2 weeks
-<strong>Assigned To</strong>: TBD
+<strong>Assigned To</strong>: API Team
 <strong>Dependencies</strong>: None</p>
-<p>Implement a complete CI/CD pipeline that tests the version before production deployment. This will serve as a model version that will be duplicated for other services. The pipeline should include automated testing, building, and deployment to staging and production environments, with proper validation at each step.</p>
-<h3 id="set-up-cicd-pipeline">Set Up CI/CD Pipeline</h3>
-<p><strong>Priority</strong>: Medium
-<strong>Estimated Time</strong>: 1 week
-<strong>Assigned To</strong>: TBD
-<strong>Dependencies</strong>: None</p>
-<p>Configure a continuous integration and continuous deployment pipeline using GitHub Actions. The pipeline should include automated testing, building, and deployment to staging and production environments.</p>
+<p>Implement a complete CI/CD pipeline that tests the version before production deployment. This will serve as a model 
+version that will be duplicated for other services. The pipeline should include automated testing, building, 
+and deployment to staging and production environments, with proper validation at each step.</p>
 <h3 id="implement-monitoring-and-logging">Implement Monitoring and Logging</h3>
 <p><strong>Priority</strong>: Low
-<strong>Estimated Time</strong>: 2 weeks
-<strong>Assigned To</strong>: TBD
+<strong>Estimated Time</strong>: 1 weeks
+<strong>Assigned To</strong>: API Team
 <strong>Dependencies</strong>: None</p>
-<p>Set up comprehensive monitoring and logging for all services, including error tracking, performance monitoring, and usage analytics. This will help identify and resolve issues quickly.</p>
-<h3 id="create-api-documentation">Create API Documentation</h3>
-<p><strong>Priority</strong>: Medium
-<strong>Estimated Time</strong>: 1 week
-<strong>Assigned To</strong>: TBD
-<strong>Dependencies</strong>: Recipe Management API, Ingredient Database Service</p>
-<p>Generate comprehensive API documentation using OpenAPI/Swagger, including examples and explanations for all endpoints. The documentation should be accessible through a web interface.</p>
-<h3 id="write-user-guides">Write User Guides</h3>
-<p><strong>Priority</strong>: Low
-<strong>Estimated Time</strong>: 2 weeks
-<strong>Assigned To</strong>: TBD
-<strong>Dependencies</strong>: Web Application Frontend</p>
-<p>Create detailed user guides for the web application, explaining how to use all features. The guides should include screenshots and step-by-step instructions.</p>
+<p>Set up comprehensive monitoring and logging for all services, including error tracking, performance monitoring, and usage 
+analytics. This will help identify and resolve issues quickly.</p>
 
 
 
