@@ -13,26 +13,6 @@ This page lists all planned tasks that have not yet been started. When work begi
 
 Create a comprehensive authentication service that handles user registration, login, password reset, and token management. The service should integrate with Keycloak and support role-based access control.
 
-### Develop Recipe Management API
-
-**Priority**: High
-**Estimated Time**: 4 weeks
-**Assigned To**: TBD
-**Dependencies**: User Authentication Service
-
-Build a RESTful API for managing recipes, including endpoints for creating, reading, updating, and deleting recipes. The API should support filtering, sorting, and pagination of results.
-
-### Create Ingredient Database Service
-
-**Priority**: Medium
-**Estimated Time**: 2 weeks
-**Assigned To**: TBD
-**Dependencies**: None
-
-Develop a service for managing ingredients, including nutritional information, availability, and pricing data. This service will be used by the Recipe Management API.
-
-## Frontend Applications
-
 ### Develop License Management UI
 
 **Priority**: High
@@ -51,15 +31,6 @@ Develop a user interface for managing licenses. The UI should allow administrato
 
 Develop a user interface for managing credentials from the License UI. The UI should allow users to securely store and retrieve their credentials. It should integrate seamlessly with the License Management UI.
 
-### Design User Interface Mockups
-
-**Priority**: High
-**Estimated Time**: 2 weeks
-**Assigned To**: TBD
-**Dependencies**: None
-
-Create detailed mockups for all user interfaces, including mobile and desktop versions. The designs should follow the established brand guidelines and focus on usability.
-
 ### Develop Web Application Frontend
 
 **Priority**: Medium
@@ -68,8 +39,6 @@ Create detailed mockups for all user interfaces, including mobile and desktop ve
 **Dependencies**: User Interface Mockups, User Authentication Service
 
 Build the web application frontend using React, with responsive design for desktop and mobile devices. The application should include user authentication, recipe browsing, and recipe management features.
-
-## Infrastructure
 
 ### Implement Complete CI/CD Pipeline
 
@@ -97,8 +66,6 @@ Configure a continuous integration and continuous deployment pipeline using GitH
 **Dependencies**: None
 
 Set up comprehensive monitoring and logging for all services, including error tracking, performance monitoring, and usage analytics. This will help identify and resolve issues quickly.
-
-## Documentation
 
 ### Create API Documentation
 
