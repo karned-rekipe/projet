@@ -1,0 +1,28 @@
+digraph Kafka_FastAPI {
+	subgraph cluster_APIs {
+		color=lightgrey label="APIs FastAPI" style=filled
+		App
+		"Artefact Storage"
+		"Data Storage"
+		"Extract Data"
+	}
+	subgraph cluster_Topics {
+		color=lightblue label="Kafka Topics" style=filled
+		"Artefact Storage Topic" [shape=cylinder]
+		"Extract Data Topic" [shape=cylinder]
+	}
+	subgraph cluster_Consumers {
+		color=lightyellow label="Kafka Consumers" style=filled
+		"Consumer -> Data Storage"
+		"Consumer -> Extract Data"
+		"Consumer -> Data Storage (Extract)"
+	}
+	App -> "Artefact Storage"
+	"Artefact Storage" -> "Artefact Storage Topic"
+	"Artefact Storage Topic" -> "Consumer -> Data Storage"
+	"Artefact Storage Topic" -> "Consumer -> Extract Data"
+	"Consumer -> Extract Data" -> "Extract Data"
+	"Extract Data" -> "Extract Data Topic"
+	"Extract Data Topic" -> "Consumer -> Data Storage (Extract)"
+	"Consumer -> Data Storage (Extract)" -> "Data Storage"
+}
