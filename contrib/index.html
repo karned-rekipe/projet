@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -616,6 +616,21 @@
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>docs/&lt;ticket-id&gt;-short-description<span class="w">    </span><span class="c1"># documentation</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>release/v1.2.0<span class="w">                        </span><span class="c1"># branche de release (si besoin)</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>hotfix/v1.2.1-description<span class="w">             </span><span class="c1"># fix critique en prod</span>
+</code></pre></div>
+<hr />
+<h2 id="pr-workflow">📋 PR Workflow</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>1. Crée une branche feat/xxx depuis main
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>2. Commits atomiques (Conventional Commits)
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>3. Ouvre une PR → CI doit être vert
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>4. Code review (au moins 1 approbation)
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>5. Rebase + Squash merge sur main
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>6. Suppression automatique de la branche après merge
+</code></pre></div>
+<h3 id="conventional-commits">Conventional Commits</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>feat: add ingredient search endpoint
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>fix: correct pagination offset calculation
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>chore: bump kcrud to v1.3.0
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>docs: update README installation steps
 </code></pre></div>
 <hr />
 
